@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GO Transit Tracker</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCL6l2vUO9iTqxXsz9EieH1LRPMFRcQTC8"></script>
+
+    <!-- Linking the local CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script
+        src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Adding scripts for CDN files -->
+    <script
+        src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@googlemaps/markerclustererplus@5.1.3/dist/markerclustererplus.min.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div id="header-text">
+        <h3>GO Transit Tracker</h3>
+    </div>
+    <input type="text" id="search-box" placeholder="Search for a transit stop..." onkeyup="searchStops()">
+    <div id="visualContainer">
+        <div id="map"></div>
+        <div id="graphCollection">
+            <h5>Visualization for the stops</h5>
+            <canvas id="chartCanvas"></canvas>
+            <canvas id="chartCanvas2"></canvas>
+        </div>
+    </div>
+</body>
+
+</html>

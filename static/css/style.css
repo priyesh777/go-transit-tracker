@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+
+}
+
+#header-text {
+    display: flex;
+    justify-content: center;
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    max-width: 100%;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+#visualContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#h5 {
+    margin: 0;
+}
+
+#map {
+    height: 80vh;
+    width: 60%;
+    margin: 1rem;
+    border: 1px solid #007bff;
+    border-radius: 8px;
+}
+
+#search-box {
+    width: 80%;
+    padding: 10px;
+    margin: 5px auto;
+    display: block;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.info-window {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+#graphCollection {
+    width: 35%;
+    margin: 1rem;
+    border: 1px solid #007bff;
+    border-radius: 8px;
+}
+
+#chartCanvas {
+    max-width: 650px;
+    height: 40vh;
+}
+
+#chartCanvas2 {
+    max-width: 650px;
+    max-height: 40vh;
+}
