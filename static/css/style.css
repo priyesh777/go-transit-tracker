@@ -28,7 +28,7 @@ body {
 }
 
 #map {
-    height: 80vh;
+    height: 82vh;
     width: 60%;
     margin: 1rem;
     border: 1px solid #007bff;
@@ -59,10 +59,10 @@ body {
 
 #chartCanvas {
     max-width: 650px;
-    height: 40vh;
+    max-height: 40vh;
 }
 
 #chartCanvas2 {
     max-width: 650px;
-    max-height: 40vh;
+    max-height: 38vh;
 }
